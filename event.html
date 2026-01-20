@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Exhibition</title>
+
+    <!-- External CSS (IMPORTANT for test case) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>ArteNova</h1>
+    <h2>Where Art Speaks ✨</h2>
+
+    <!-- Flexbox Layout -->
+    <div class="flex-box">
+
+        <!-- Media Section -->
+        <div class="media">
+            <img src="C:\Users\urk23cs5107\Downloads\28663.jpg" alt="Event Banner">
+
+            <p><strong>Event Promo Video</strong></p>
+            <video controls>
+                <source src="C:\Users\urk23cs5107\Downloads\IAG Cargo  The National Gallery teaser - IAG Cargo (1080p, h264).mp4" type="video/mp4">
+            </video>
+
+            <p><strong>Event Promo Audio</strong></p>
+            <audio controls>
+                <source src="C:\Users\urk23cs5107\Downloads\event_regaudio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Registration Form -->
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" required>
+
+            <label>Event Date</label>
+            <input type="date" required>
+
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" name="gender" required> Male
+                <input type="radio" name="gender"> Female
+            </div>
+
+            <label>Event Type</label>
+            <select required>
+                <option value="">-- Select Event --</option>
+                <option>Art Exhibition</option>
+                <option>Digital Art Gallery</option>
+                <option>Mixed Media Art</option>
+                v
+            </select>
+
+            <label>Comments</label>
+            <textarea rows="4"></textarea>
+
+            <div class="terms">
+                <input type="checkbox" required>
+                I agree to the Terms & Conditions
+            </div>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
